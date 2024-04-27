@@ -1,0 +1,19 @@
+<h1> Danh mục môn thi</h1>
+<div class="row justify-content-center">
+    <div ng-if="username !== null" class="card m-3" style="width: 18rem" ng-repeat="mh in Subjects">
+        <a ng-href="#/tracnghiem/{{mh.Id}}/{{mh.Name}}"><img ng-src="img/logos/{{mh.Logo}}" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">{{mh.Name | uppercase}} </h5>
+            </div>
+        </a>
+    </div>
+    <div ng-if="username == null" class="card m-3" style="width: 18rem" ng-repeat="mh in Subjects">
+        <a ng-click="showAlert()">
+            <img ng-src=" img/logos/{{mh.Logo}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">{{mh.Name | uppercase}} </h5>
+            </div>
+        </a>
+    </div>
+</div>

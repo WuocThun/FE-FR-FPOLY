@@ -1,0 +1,238 @@
+   <div class="container mb-3"  >
+      <div>
+        <h1 class="text-center text-light-emphasis">Danh mục bài thi</h1>
+        <p class="text-center">Quắc Thựn chúc thi không tốt nhé</p>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/5.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/6.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/7.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/8.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+<div class="row">
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/9.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/10.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/logos/x6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ADAV</h5>
+        <p class="card-text">Bộ môn ADV gì đó</p>
+        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/x7.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/x8.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/logos/1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ADAV</h5>
+                        <p class="card-text">Bộ môn ADV gì đó</p>
+                        <button href="#"  data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary">Bắt đầu thi</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+    </div>

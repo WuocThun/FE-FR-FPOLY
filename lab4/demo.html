@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="ctrl1">
+      <h1>Xin chào {{name}}</h1>
+    </div>
+    <div ng-controller="ctrl2">
+      <!-- <p>Mã số {{student.id}}</p>
+      <p>Tên sinh viên {{student.name}}</p>
+      <p>Điểm {{student.score}}</p> -->
+      <p>Mã số {{student[0]}}</p>
+      <p>Tên sinh viên {{student[1]}}</p>
+      <p>Điểm {{student[2]}}</p>
+    </div>
+    <div ng-controller="ctrl3">
+      <input type="text" ng-model="hello" />
+      <h2>{{hello}}</h2>
+    </div>
+    <script>
+      // Khởi tạo một ứng dụng angularJs
+      var app = angular.module("myApp", []);
+      app.controller("ctrl1", function ($scope) {
+        $scope.name = "Thựn";
+      });
+      app.controller("ctrl2", function ($scope) {
+        // $scope.student = {
+        //   id: "pd123",
+        //   name: "pd123",
+        //   score: 9,
+        // };
+        $scope.student = [1, "WucThun", 4];
+      });
+      app.controller("ctrl3", function ($scope) {
+        $scope.hello = "thuận Khôn";
+      });
+    </script>
+  </body>
+</html>

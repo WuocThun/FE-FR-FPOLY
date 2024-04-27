@@ -1,0 +1,30 @@
+<section class="container bg-secondary-subtle rounded" id="baithi">
+    <figure class="text-center pt-4">
+        <blockquote class="blockquote">
+            <h2>Bài Thi</h2>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Trang thi trắc nghiệm số 1
+            <cite title="Source Title"> Polytechnic</cite>
+        </figcaption>
+    </figure>
+    <!--  -->
+    <div class="row justify-content-center">
+        <div class="card m-3" style="width: 18rem" ng-repeat="mh in Subjects">
+            <img ng-src="img/logos/{{mh.Logo}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">{{mh.Name | uppercase}} </h5>
+                <p class="card-text">
+                    Bài làm gồm 10 câu hỏi Kiểm thử và thiết kế , thí sinh
+                    thực hiện trong vòng 20 phút .
+                </p>
+                <div ng-if="username !== null">
+                    <a ng-href="#/tracnghiem/{{mh.Id}}/{{mh.Name}}" class="btn btn-primary">Bắt đầu làm bài</a>
+                </div>
+                <div ng-if="username == null">
+                    <button ng-click="showAlert()" class="btn btn-primary">Bắt đầu làm bài</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

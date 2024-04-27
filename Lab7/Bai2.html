@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/hinh/logo.png" />
+    <link rel="stylesheet" href="/fontawesome-free-6.2.1-web/css/all.min.css">
+    <script src="Prods.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="Ctrl">
+        <div class="row">
+            <div class="col-sm-8 mx-auto" style="margin-top: 2cm;">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-list-check"></i> Danh sách hàng hóa
+                    </div>
+                    <div>
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr style="font-weight: bold;">
+                                    <td>Sản Phẩm</td>
+                                    <td>Đơn Giá</td>
+                                    <td>Giảm Giá</td>
+                                    <td>Ngày</td>
+                                </tr>
+                                <tr ng-repeat="sc in listds">
+                                    <td>{{sc.name|uppercase}}</td>
+                                    <td style="font-weight: bold; color: red;">{{sc.price|currency}}</td>
+                                    <td>{{sc.discount|percentage:2}}</td>
+                                    <td>{{sc.date|date:"MMMM-dd, yyyy"}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("Ctrl", function ($scope, $http) {
+            $scope.listds = list;
+        });
+        app.filter('percentage', function ($filter) {
+            return function (input, decimals) {
+                return $filter('number')(input * 100, decimals) + '%';
+            };
+        })
+    </script>
+</body>
+
+</html>

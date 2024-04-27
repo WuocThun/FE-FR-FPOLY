@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/hinh/logo.png" />
+</head>
+
+<body ng-app="myApp">
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-8 mx-auto" style="margin-top: 2cm;">
+                <div class="card">
+                    <div class="card-header  bg-primary text-white">
+                        Kiểm Tra
+                    </div>
+                    <div class="card-body">
+                        <form name="form">
+                            <div class="form-group">
+                                <label>POLY NUMBER</label>
+                                <input poly-number class="form-control" ng-model="number" type="text" name="txtnumber">
+                                <span ng-show="form.txtnumber.$invalid && form.txtnumber.$dirty" class="text-danger">Số này không chia hết cho 2 và 9</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-danger">Kiểm Tra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("polyNumber", function () {
+            return {
+                require: "ngModel",
+                link: function (scope, element, attr, mCtrl) {
+                    mCtrl.$parsers.push(function (value) {
+                        var number = parseInt(value);
+                        if (number % 2 == 0 && number % 9 == 0) {
+                            mCtrl.$setValidity('charE', true);
+                        } else {
+                            mCtrl.$setValidity('charE', false);
+                        }
+                        return value;
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

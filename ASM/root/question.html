@@ -1,0 +1,26 @@
+<button id="timeBtn" class="btn btn-primary m-3">{{ timeDisplay }}</button>
+
+<button id="timeBtn" class="btn btn-primary m-3"><span>{{$index + start + 1}}</span>/ <span>10</span></button>
+<div class="card">
+    <h5 class="card-header">{{tenMH}}</h5>
+    <div class="card-body" ng-repeat="ch in caccauhoi.slice(start, start + pageSize)">
+        <h5 class="card-title">Câu hỏi {{$index + start + 1}}: <span class="">{{ch.Text}}</span></h5>
+        <div class="form-check" ng-repeat="p in ch.Answers">
+            <input ng-click="kiemtraPA (p.Id, ch.AnswerId, ch. Marks)" class="form-check-input"
+                ng-model="selectedAnswers[ch.Id]" type="radio" name="cauhoi_{{ch.Id}}" id="question{{p.Id}}"
+                ng-click="selectAnswer(ch.Id, p.Id)" value="{{p.Id}}">
+            <label class="form-check-label" for="question{{p.Id}}">{{p.Text}}</label>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-between mt-lg-5 align-items-center">
+    <button ng-click="first()" class="btn btn-primary">Đầu </button>
+    <button ng-click="prev()" class="btn btn-primary">
+        < </button>
+            <!-- <button ng-click="ketThucBaiThi()" class="btn btn-outline-success">Kết thúc</button> -->
+            <button id="showAlertBtn" class="btn btn-outline-success m-3" ng-click="showAlert()">Kết thúc</button>
+
+
+            <button ng-click="next()" class="btn btn-primary"> > </button>
+            <button ng-click="last()" class="btn btn-primary">Cuối</button>
+</div>

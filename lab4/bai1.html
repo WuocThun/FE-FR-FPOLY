@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <h1>Bài 1</h1>
+    <ul ng-controller="myCtr">
+      <img src="{{image}}" alt="" />
+      <li>Họ và tên {{name}}</li>
+      <li>Ngày sinh {{date}}</li>
+      <li>Ngày sinh {{gender}}</li>
+      <li>Điểm TB {{score}}</li>
+    </ul>
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtr", function ($scope) {
+        $scope.image = "a.jpeg";
+        $scope.name = "Thuận bài 2";
+        $scope.date = "01-01-2004";
+        $scope.gender = "Nam";
+        $scope.score = 10;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "headContent": "Sách giáo khoa",
+        "mainContent" : "sách giáo khoa từ lớp 1-12",
+        "img" : "sachGk.jpeg"
+    },
+    {
+        "headContent": "Sách giải",
+        "mainContent" : "sách giải từ lớp 1-12",
+        "img" : "sachGiai.jpeg"
+    },
+    {
+        "headContent": "truyện",
+        "mainContent" : "Truyện hya từ lớp 1-12",
+        "img" : "truyen.webp"
+    },
+    {
+        "headContent": "Tiểu thuyết",
+        "mainContent" : "Tiểu thuyết hay ho",
+        "img" : "tieuthuyet.jpeg"
+    }
+]
